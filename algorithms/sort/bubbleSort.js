@@ -1,0 +1,22 @@
+
+const bubbleSort = (arr) => {
+  var i;
+  var j;
+  var len = arr.length;
+  if (len <= 1) {
+    return arr;
+  }
+  for (i = 0; i < len; i++) {
+    for (j = i; j < len - i; j++) {
+      var swap;
+      if (arr[j] > arr[j + 1]) {
+        swap = arr[j + 1];
+        arr[j + 1] = arr[j];
+        arr[j] = swap;
+      }
+    }
+  }
+  return arr;
+};
+
+module.exports = bubbleSort;

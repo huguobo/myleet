@@ -1,0 +1,23 @@
+{
+  "name": "myleet",
+  "version": "1.0.0",
+  "description": "leetcode using JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && mocha",
+    "lint": "eslint . --fix && echo 'ESLint Passed.\\n'"
+  },
+  "keywords": [
+    "leetcode",
+    "javascirpt"
+  ],
+  "author": "cooper",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "glob": "^7.1.3",
+    "mocha": "^5.2.0"
+  }
+}
