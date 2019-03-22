@@ -1,3 +1,4 @@
+// 对称二叉树
 var isSymTree = function (root) {
   if (!root) {
     return true;

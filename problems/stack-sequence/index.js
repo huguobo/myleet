@@ -1,3 +1,5 @@
+// 验证栈序列
+
 var stackSequence = function (pushed, popped) {
   var myStack = [];
   var popIndex = 0;

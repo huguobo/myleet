@@ -1,3 +1,5 @@
+// 反转链表
+
 // var reverseLinkedList = function (head) {
 //   if (!head || !head.next) {
 //     return head;

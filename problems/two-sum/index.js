@@ -22,6 +22,8 @@
  * @param {number} target
  * @return {number[]}
  */
+
+// 两数相加
 var twoSum = function (nums, target) {
   var hash = nums.reduce(function (prev, cur, index) {
     if (prev[cur] === undefined) {

@@ -1,4 +1,4 @@
-
+// 删除链表重复节点
 var deleteDuplicates = function (head) {
   if (!head) {
     return head;

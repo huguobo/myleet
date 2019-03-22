@@ -1,3 +1,4 @@
+// 最小栈
 function MinStack() {
   this.stack = [];
 }

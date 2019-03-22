@@ -1,3 +1,4 @@
+// 合并二叉树
 var TreeNode = require('../../data-structure/BinaryTreeNode/');
 var mergeBinaryTree = function (t1, t2) {
   if (!t1 && !t2) {

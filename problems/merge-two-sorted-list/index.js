@@ -1,3 +1,4 @@
+// 合并两个有序链表
 var ListNode = require('../../data-structure/listNode');
 
 var mergeLists = function (l1, l2) {

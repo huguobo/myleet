@@ -1,3 +1,4 @@
+// 奇偶链表
 var oddEvenLinklist = function (head) {
   if (!head || !head.next) {
     return head;

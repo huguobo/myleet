@@ -1,3 +1,4 @@
+// 分发饼干
 var dispatchCookies = function (g, s) {
   var gsort = g.sort(function (a, b) { return a - b; });
   var ssort = s.sort(function (a, b) { return a - b; });
