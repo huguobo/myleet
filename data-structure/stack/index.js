@@ -25,7 +25,4 @@ function Stack() {
     return items.toString();
   };
 }
-
-const a = new Stack();
-a.push('1');
-a.pop(); // '1'
+module.exports = Stack;
