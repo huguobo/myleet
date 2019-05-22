@@ -2,7 +2,7 @@
 // 十六进制表示法 + rgba表示法
 var randomColor = function (type = 'eight') {
   function eight() {
-    var colorArr = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+    var colorArr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
     let colorString = '';
     for (let i = 0; i < 6; i++) {
       colorString += colorArr[Math.floor(Math.random() * 15)];

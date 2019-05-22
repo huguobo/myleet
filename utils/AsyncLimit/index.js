@@ -45,7 +45,7 @@ var asyncLimit = function (limit, arr, fn, callback) {
       }
 
       running++;
-      fn(arr[i], i, once(done), running);
+      fn(arr[i], i, once(done));
     }
   }
   // 每个操作执行的回调
@@ -73,9 +73,9 @@ var asyncLimit = function (limit, arr, fn, callback) {
 if (require.main === module) {
   var arr = ['1', '2', '3', '4'];
 
-  asyncLimit(3, arr, function (item, index, done, running) {
+  asyncLimit(3, arr, function (item, index, done) {
     setTimeout(() => {
-      console.log(item, index, running);
+      console.log(item, index);
       done();
     }, 2000);
   }, function (err) {
