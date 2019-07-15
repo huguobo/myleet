@@ -6,6 +6,7 @@ var print = function (arr) {
   var start = 0;
   var res = [];
   function oneCircle(arr, start) {
+    console.log('round:', start);
     var endX = cols - start - 1;
     var endY = rows - start - 1;
     var i;
@@ -22,14 +23,14 @@ var print = function (arr) {
       }
     }
     // 打印下
-    if (start < endX) {
+    if (start < endX && start < endY) {
       for (i = endX - 1; i >= start; i--) {
         console.log(arr[endY][i]);
         res.push(arr[endY][i]);
       }
     }
     // 打印左
-    if (start < endY - 1) {
+    if (start < endY - 1 && start < endX) {
       for (i = endY - 1; i >= start + 1; i--) {
         console.log(arr[i][start]);
         res.push(arr[i][start]);
@@ -46,6 +47,6 @@ module.exports = print;
 
 
 if (require.main === module) {
-  const arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+  const arr = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]];
   print(arr);
 }
