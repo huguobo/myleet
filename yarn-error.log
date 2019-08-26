@@ -1,0 +1,58 @@
+Arguments: 
+  /Users/cooperhu/.nvm/versions/node/v8.16.0/bin/node /Users/cooperhu/.nvm/versions/node/v8.16.0/bin/yarn install --registry=http://r.tnpm.oa.com --verbose
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/cooperhu/.nvm/versions/node/v8.16.0/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  8.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: http://r.tnpm.oa.com/eslint: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/Users/cooperhu/.nvm/versions/node/v8.16.0/lib/node_modules/yarn/lib/cli.js:141091:19)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:106:13)
+      at ClientRequest.emit (events.js:208:7)
+      at Socket.emitTimeout (_http_client.js:718:34)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:106:13)
+      at Socket.emit (events.js:208:7)
+      at Socket._onTimeout (net.js:422:8)
+      at ontimeout (timers.js:498:11)
+
+npm manifest: 
+  {
+    "name": "myleet",
+    "version": "1.0.0",
+    "description": "leetcode using JS",
+    "main": "index.js",
+    "scripts": {
+      "test": "npm run lint && mocha",
+      "lint": "eslint . --fix && echo 'ESLint Passed.\\n'"
+    },
+    "keywords": [
+      "leetcode",
+      "javascirpt"
+    ],
+    "author": "cooper",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+      "eslint": "^5.13.0",
+      "eslint-config-airbnb": "^17.1.0",
+      "glob": "^7.1.3",
+      "mocha": "^5.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

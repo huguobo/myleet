@@ -6,33 +6,28 @@ var print = function (arr) {
   var start = 0;
   var res = [];
   function oneCircle(arr, start) {
-    console.log('round:', start);
     var endX = cols - start - 1;
     var endY = rows - start - 1;
     var i;
     // 打印上
     for (i = start; i <= endX; i++) {
-      console.log(arr[start][i]);
       res.push(arr[start][i]);
     }
     // 打印右
     if (start < endY) {
       for (i = start + 1; i <= endY; i++) {
-        console.log(arr[i][endX]);
         res.push(arr[i][endX]);
       }
     }
     // 打印下
     if (start < endX && start < endY) {
       for (i = endX - 1; i >= start; i--) {
-        console.log(arr[endY][i]);
         res.push(arr[endY][i]);
       }
     }
     // 打印左
     if (start < endY - 1 && start < endX) {
       for (i = endY - 1; i >= start + 1; i--) {
-        console.log(arr[i][start]);
         res.push(arr[i][start]);
       }
     }

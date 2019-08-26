@@ -1,4 +1,4 @@
-// 深度优先遍历，借用栈实现
+// 广度优先遍历，借用队列实现
 var bfs = function (root, handler) {
   var queue = [];
   queue.push(root);
