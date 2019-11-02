@@ -110,10 +110,7 @@ function BinarySearchTree() {
   this.postOrderTraverseUnRec = function (callback) {
     if (root !== null) {
       var stack = new Stack();
-
-
       var outputStack = new Stack();
-
 
       var node;
       stack.push(root);
