@@ -11,20 +11,23 @@
     "leetcode",
     "javascirpt"
   ],
-  "scripts": {
-    "commit": "git-cz"
-  },
   "author": "cooper",
   "license": "MIT",
   "dependencies": {
     "xregexp": "^4.2.4"
   },
   "devDependencies": {
+    "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^5.13.0",
     "eslint-config-airbnb": "^17.1.0",
     "glob": "^7.1.3",
     "husky": "^3.0.9",
     "mocha": "^5.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
