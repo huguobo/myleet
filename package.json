@@ -11,6 +11,9 @@
     "leetcode",
     "javascirpt"
   ],
+  "bin": {
+    "hello-cli": "my-cli.js"
+  },
   "author": "cooper",
   "license": "MIT",
   "dependencies": {

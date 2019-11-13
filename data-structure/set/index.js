@@ -1,4 +1,3 @@
-/* eslint *:0 */
 // 集合
 
 function Set() {
