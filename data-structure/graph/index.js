@@ -19,7 +19,7 @@ function Dictionary (){
 }
 
 function Graph(){
-  var vertices = []; // 存储定点
+  var vertices = []; // 存储顶点
   var adjList = new Dictionary();
 
  //创建initializeColor用来初始化各个顶点的颜色，为遍历过程中的标记做准备
@@ -67,19 +67,19 @@ function Graph(){
    var queue = [];
    queue.push(v);
 
-   while(queue.length > 0){
+   while(queue.length > 0) {
      var cur = queue.shift();
      var neibors = adjList.get(cur);
      color[cur] = 'grey';
-     for(let i=0; i<neibors.length; i++){
+     for(let i=0; i<neibors.length; i++) {
       var w = neibors[i];
-      if(color[w] === 'white'){
+      if(color[w] === 'white') {
         color[w] === 'grey';
         queue.push(w);
       }
      }
      color[cur] = 'black';
-     if(callback){
+     if(callback) {
        callback(cur);
      }
    }
