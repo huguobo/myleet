@@ -19,7 +19,7 @@ const aIndexOf = (arr, searchItem, fromIndex) => {
 const customIndexOf = (target, search, fromIndex) => {
   const isString = Object.prototype.toString.call(target) === "[object String]";
   const isArray = Array.isArray(target);
-  if(!isString && !isArray)  throw new SyntaxError();
+  if(!isString && !isArray)  throw new TypeError();
   if(isArray) return aIndexOf(target, search, fromIndex);
   else return sIndexOf(target, search, fromIndex);
 } 
