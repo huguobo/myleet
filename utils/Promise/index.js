@@ -17,7 +17,7 @@ function Promise(executor) {
 Promise.prototype.then = function (onFufiled, onRejected) {
   console.log('then this', this);
   let self = this;
-  if (self.webkit === 'pending') {
+  if (self.status === 'pending') {
     self.onResolvedCallbacks.push(function () {
       console.log('callback this', this);
       onFufiled(self.value);
