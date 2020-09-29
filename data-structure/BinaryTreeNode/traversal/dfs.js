@@ -38,7 +38,24 @@ var inorderTraversal = function (root) {
 
 // 后序遍历 （非递归）
 
-var postOrderTraversal = function (root) {
-  
-
-}
+var postorderTraversal = function(root) {
+  if(!root){
+    return [];
+  }
+  const stack = [];
+  stack.push(root);
+  let tmp = null;
+  let res = [];
+  while(stack.length !== 0) {
+    tmp = stack.slice(-1)[0];
+    if(tmp.left && root !== tmp.left && root !== tmp.right) {
+      stack.push(tmp.left);
+    } else if(tmp.right && root !== tmp.right) {
+      stack.push(tmp.right)
+    } else { 
+      res.push(stack.pop().val);
+      root = tmp;
+    }
+  }
+  return res;
+};
