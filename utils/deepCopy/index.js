@@ -9,7 +9,7 @@ function deepClone(obj) {
       if (obj.hasOwnProperty(key)) {
         if (obj[key] && typeof obj[key] === 'object') {
           objClone[key] = deepClone(obj[key]);
-        } else {
+        } else { 
           objClone[key] = obj[key];
         }
       }
@@ -28,5 +28,23 @@ function deepClone2(obj) {
   return objClone;
 }
 
+const has = (o,k) => o.hasOwnProperty(k);
+const isObj = o => Object.prototype.toString.call(o) === '[object Object]';
+const isArray
 
+const deepClone = (obj) => {
+  let objClone = Array.isArray(obj) ? [] : {};
+  for(const key in obj) {
+    if(has(obj, key)) {
+      if(isObj(obj[key]) || Array.isArray(obj[key])) {
+        objClone[key] = deepClone(obj[key]);
+      } else {
+        objClone[key] = obj[key]
+      }
+    }
+  }
+  return objClone;
 
+};
+
+module.exports = deepClone;
