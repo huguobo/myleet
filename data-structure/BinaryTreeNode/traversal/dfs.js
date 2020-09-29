@@ -59,3 +59,24 @@ var postorderTraversal = function(root) {
   }
   return res;
 };
+
+// 另一种思路，利用两个栈
+var postorderTraversal = function(root) {
+  let res = [];
+  const stack1 = [];
+  const stack2 = [];
+  while(root || stack1.length){
+    while(root) {
+      stack2.push(root);
+      stack1.push(root);
+      root = root.right;
+    }
+    if(stack1.length){
+      root = stack1.pop();
+      root = root.left;
+    }
+  }
+  while(stack2.length) {
+    res.push(stack2.pop().val);
+  }
+}
