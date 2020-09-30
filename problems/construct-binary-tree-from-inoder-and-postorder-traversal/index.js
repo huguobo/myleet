@@ -20,6 +20,7 @@ var buildTree = function(inorder, postorder) {
 
   // [左子树 根 右子树]
   const leftInorder = inorder.slice(0, indexOfInorder);
+  
   const leftPostorder = postorder.slice(0, indexOfInorder);
   res.left = buildTree(leftInorder, leftPostorder);
 
