@@ -30,7 +30,6 @@ function deepClone2(obj) {
 
 const has = (o,k) => o.hasOwnProperty(k);
 const isObj = o => Object.prototype.toString.call(o) === '[object Object]';
-const isArray
 
 const deepClone = (obj) => {
   let objClone = Array.isArray(obj) ? [] : {};
