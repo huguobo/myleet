@@ -20,7 +20,7 @@
     "xregexp": "^4.2.4"
   },
   "devDependencies": {
-    "commitizen": "^4.0.3",
+    "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^5.13.0",
     "eslint-config-airbnb": "^17.1.0",
