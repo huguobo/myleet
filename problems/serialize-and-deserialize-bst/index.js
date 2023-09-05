@@ -27,6 +27,7 @@ var serialize = function(root) {
 var deserialize = function(str) {
 
 	if (!str || !str.length) return null;
+	// parseInt is necessary
 	const stack = str.split(',').map(item => parseInt(item));
 
 	function generator1(stack, min, max) {
