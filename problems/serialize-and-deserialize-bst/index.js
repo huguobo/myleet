@@ -28,6 +28,7 @@ var deserialize = function(str) {
 
 	if (!str || !str.length) return null;
 	// parseInt is necessary
+	// [1,2,3].join(',').split(',') => ['1', '2', '3']
 	const stack = str.split(',').map(item => parseInt(item));
 
 	function generator1(stack, min, max) {
