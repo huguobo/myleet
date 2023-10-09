@@ -6,7 +6,7 @@ var dfs = function (root, handler) {
     var node = stack.pop();
     console.log(node.val);
     if (typeof handler === 'function') {
-      handler(root);
+      handler(node);
     }
     if (node.right) {
       stack.push(node.right);
