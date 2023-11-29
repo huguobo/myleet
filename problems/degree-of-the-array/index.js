@@ -23,7 +23,7 @@ var findShortestSubArray = function(nums) {
       if(hash[num].last - hash[num].first < hash[mostCountVal].last - hash[mostCountVal].first) {
         mostCountVal = num;
       }
-    } else if (hash[num].count < hash[mostCountVal].count) {
+    } else if (hash[num].count > hash[mostCountVal].count) {
       mostCountVal =  num;
     }
   }
